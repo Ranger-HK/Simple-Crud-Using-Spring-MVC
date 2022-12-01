@@ -25,32 +25,32 @@ import javax.sql.DataSource;
 @PropertySource("classpath:application.properties")
 public class JPAConfig {
 
-    @Autowired
-    Environment env;
+//    @Autowired
+//    Environment env;
 
     @Bean
     public LocalContainerEntityManagerFactoryBean entityManagerFactory(DataSource dataSource, JpaVendorAdapter jva) {
         LocalContainerEntityManagerFactoryBean bean = new LocalContainerEntityManagerFactoryBean();
         bean.setJpaVendorAdapter(jva);
         bean.setDataSource(dataSource);
-        bean.setPackagesToScan(env.getRequiredProperty("entity.package.name"));
+        bean.setPackagesToScan("com.mycompany.simple_crud_using_springmvc.entity");
         return bean;
     }
 
     @Bean
     public DataSource dataSource() {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
-        dataSource.setUrl(env.getRequiredProperty("my.app.url"));
-        dataSource.setUsername(env.getRequiredProperty("my.app.username"));
-        dataSource.setPassword(env.getRequiredProperty("my.app.password"));
-        dataSource.setDriverClassName(env.getRequiredProperty("my.app.driverClassname"));
+        dataSource.setUrl("jdbc:mysql://localhost:3306/simple_crud_using_springmvc?createDatabaseIfNotExist=true");
+        dataSource.setUsername("root");
+        dataSource.setPassword("19990202Ravi@:&pra");
+        dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
         return dataSource;
     }
 
     @Bean
     public JpaVendorAdapter jpaVendorAdapter() {
         HibernateJpaVendorAdapter vendor = new HibernateJpaVendorAdapter();
-        vendor.setDatabasePlatform(env.getRequiredProperty("my.app.dialect"));
+        vendor.setDatabasePlatform("org.hibernate.dialect.MySQL8Dialect");
         vendor.setDatabase(Database.MYSQL);
         vendor.setShowSql(true);
         vendor.setGenerateDdl(true);
