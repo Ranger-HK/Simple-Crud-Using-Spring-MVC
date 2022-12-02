@@ -95,5 +95,6 @@
     <orderEntry type="library" name="jquery" level="application" />
     <orderEntry type="library" name="jquery.dataTables" level="application" />
     <orderEntry type="library" name="dataTables.bootstrap5" level="application" />
+    <orderEntry type="library" name="jquery-3.5.1" level="application" />
   </component>
 </module>
