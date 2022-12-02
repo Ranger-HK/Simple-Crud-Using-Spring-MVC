@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @project Simple_Crud_Using_SpringMVC
  */
 
+
 @RestController
 @CrossOrigin
 public class AppWideExceptionHandler {
