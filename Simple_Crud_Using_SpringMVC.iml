@@ -90,5 +90,10 @@
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.projectlombok:lombok:1.18.24" level="project" />
     <orderEntry type="library" name="Maven: org.modelmapper:modelmapper:3.1.0" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.13.3" level="project" />
+    <orderEntry type="library" name="bootstrap" level="application" />
+    <orderEntry type="library" name="sweet-alert" level="application" />
+    <orderEntry type="library" name="jquery" level="application" />
+    <orderEntry type="library" name="jquery.dataTables" level="application" />
+    <orderEntry type="library" name="dataTables.bootstrap5" level="application" />
   </component>
 </module>

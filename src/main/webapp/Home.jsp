@@ -1,6 +1,6 @@
 <%-- 
     Document   : Home
-    Created on : Dec 01, 2022, 9:30:59 AM
+    Created on : Oct 27, 2022, 6:01:39 PM
     Author     : Ravindu
 --%>
 
@@ -16,6 +16,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&family=Roboto:wght@300&family=Work+Sans:ital,wght@1,500&display=swap" rel="stylesheet">
+        <!--                <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css">-->
         <link rel="stylesheet" type="text/css" href="https://common.olemiss.edu/_js/sweet-alert/sweet-alert.css">
 
 
@@ -306,10 +307,12 @@
         <script src="https://common.olemiss.edu/_js/sweet-alert/sweet-alert.min.js"></script>
         <script src="controller/UserController.js"></script>    
         <script src="controller/TableClick.js"></script> 
-<!--        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>-->
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
         <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
         <script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
-        
+
+
+
 
 
     </body>

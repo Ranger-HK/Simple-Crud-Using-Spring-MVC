@@ -1,9 +1,8 @@
 
-<%-- 
-    Document   : Home
-    Created on : Dec 01, 2022, 9:30:59 AM
+<!--    Created on : Oct 27, 2022, 12:49:24 PM
     Author     : Ravindu
---%>
+
+-->
 
 
 <!DOCTYPE html>
@@ -103,12 +102,13 @@
 
                 //invoked ajax
                 $.ajax({
-                    url: 'loginuser',
+                    url: 'http://localhost:8080/Simple_Crud_Project/Login',
                     method: 'POST',
-                    data: "userName=" + obj.userName + "&password=" + obj.password,
+
+                    data: JSON.stringify(obj),
                     success: function (res) {
                         console.log(res);
-                        if (res.status == "200") {
+                        if (res.status == 200) {
                             swal("Login success!", "You clicked the button!", "success");
                             window.location = "Home.jsp";
 

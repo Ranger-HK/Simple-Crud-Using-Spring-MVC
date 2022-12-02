@@ -1,6 +1,6 @@
 <%-- 
     Document   : index
-    Created on : Dec 01, 2022, 9:30:59 AM
+    Created on : Oct 27, 2022, 2:59:59 PM
     Author     : Ravindu
 --%>
 
@@ -18,6 +18,9 @@
     </head>
 
     <body>
+
+
+
         <img alt="wallpaper" src="assets/img/navy-blue-smoky-art-abstract-background.jpg" class="banner">
 
 
