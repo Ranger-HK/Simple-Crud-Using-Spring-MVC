@@ -13,5 +13,5 @@ public interface UserService {
 
     List<UserDTO> getAllUsers();
 
-    String generateUserId();
+//    String generateUserId();
 }

@@ -41,10 +41,10 @@ public class UserController {
         return new ResponseUtil(200, "Ok", null);
     }
 
-    @GetMapping(value = "/generate",produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseUtil getGenerateID() {
-        return new ResponseUtil(200, "Ok", userService.generateUserId());
-    }
+//    @GetMapping(value = "/generate",produces = MediaType.APPLICATION_JSON_VALUE)
+//    public ResponseUtil getGenerateID() {
+//        return new ResponseUtil(200, "Ok", userService.generateUserId());
+//    }
 
 
 }

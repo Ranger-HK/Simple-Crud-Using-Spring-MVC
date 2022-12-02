@@ -60,26 +60,26 @@ public class UserServiceImpl implements UserService {
         }.getType());
     }
 
-    @Override
-    public String generateUserId() {
-        long count = repo.count();
-        String id = "U00-000";
-
-        if (count != 0) {
-            String generateUserId = repo.generateUserId();
-            int tempId = Integer.parseInt(generateUserId.split("-")[1]);
-            tempId += 1;
-            if (tempId < 10) {
-                id = "U00-00" + tempId;
-            } else if (tempId < 100) {
-                id = "U00-0" + tempId;
-            } else if (tempId < 1000) {
-                id = "U00-" + tempId;
-            }
-        } else {
-            id = "U00-000";
-        }
-        return id;
-    }
+//    @Override
+//    public String generateUserId() {
+//        long count = repo.count();
+//        String id = "U00-000";
+//
+//        if (count != 0) {
+//            String generateUserId = repo.generateUserId();
+//            int tempId = Integer.parseInt(generateUserId.split("-")[1]);
+//            tempId += 1;
+//            if (tempId < 10) {
+//                id = "U00-00" + tempId;
+//            } else if (tempId < 100) {
+//                id = "U00-0" + tempId;
+//            } else if (tempId < 1000) {
+//                id = "U00-" + tempId;
+//            }
+//        } else {
+//            id = "U00-000";
+//        }
+//        return id;
+//    }
 
 }
