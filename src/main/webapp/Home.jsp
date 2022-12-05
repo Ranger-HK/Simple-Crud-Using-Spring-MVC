@@ -27,13 +27,23 @@
     <style>
 
 
-        html, body {
-            background-image: url('assets/img/pexels-henry-&-co-2341290.jpg');
-            /*                background-size: cover;*/
-            background-repeat: no-repeat;
-            height: 100%;
-            font-family: 'Roboto', sans-serif;
+        /*html, body {*/
+        /*    background-image: url('https://wallpapercave.com/wp/wp6553868.jpg');*/
+        /*                    background-size: cover;*/
+        /*    background-repeat: no-repeat;*/
+        /*    height: 100%;*/
+        /*    font-family: 'Roboto', sans-serif;*/
 
+
+        /*}*/
+        html, body {
+            height: 100vh;
+            width: 100%;
+            background-position: top;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-image: url("https://wallpapercave.com/wp/wp10508082.jpg");
+            font-family: 'Roboto', sans-serif;
         }
 
         .table-success {
